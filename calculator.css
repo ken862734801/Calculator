@@ -5,6 +5,7 @@
 body{
     min-height:100vh;
     /* border: 4px solid red;  */ 
+    background-image: url(https://as1.ftcdn.net/v2/jpg/02/81/02/56/1000_F_281025640_kspbUlK5H6Hs49niGyuizejPfQTVfKKF.jpg);
 }
 .outer-container{
     display:flex;
