@@ -192,6 +192,7 @@ button:hover{
 }
 .oval:hover{
     cursor: pointer;
+    background-color:rgb(29, 36, 37); 
 }
 .column-2{
     display: inline-block;
@@ -236,6 +237,7 @@ button{
 #operator:hover{
     background-color:rgb(29, 36, 37); 
 }
+
 .other{
     font-size:16px;
     color: white;
