@@ -78,7 +78,8 @@ body{
 }
 .subtitle{
     text-align:center;
-    margin-top:20px;
+    margin-top:16px;
+    font-size:20px;
 }
 .header{
     width:400px;
