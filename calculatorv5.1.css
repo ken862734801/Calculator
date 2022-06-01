@@ -41,12 +41,12 @@ body{
 }
 .product-name{
     text-align:center;
-    margin-top:14px;
+    margin-top:0.875em;
     color:rgb(255, 255, 255);
 }
 .product-name p{
     font-weight: 500;
-    font-size:17px;
+    font-size: 1.063em;
 }
 .solar-panel{
     display:flex;
@@ -72,7 +72,7 @@ body{
     text-align:center;
     margin-top:12px;
     margin-bottom:10px;
-    font-size:11px;
+    font-size: 0.688em;
     font-weight:bold;
 }
 .screen-display{
@@ -93,7 +93,7 @@ body{
     width:275px;
     height:30px;
     text-align:right;
-    font-size:30px;
+    font-size:1.875em;
     margin-top: 90px;
     margin-left:10px;
 }
@@ -205,7 +205,7 @@ button{
     border-top:2px solid rgb(68, 81, 83);
     border-left:2px solid rgb(68, 81, 83);
     color:white;
-    font-size:22px;
+    font-size:1.375em;
     font-weight: bold;
 }
 .operator:hover{
@@ -221,12 +221,12 @@ button{
     border-bottom: 3px solid rgb(69, 81, 85);
 }
 .number{
-    font-size: 17px;
+    font-size: 1.063em;
     font-weight: bold;
 }
 .NaN{
     color:white;
-    font-size:13px;
+    font-size:0.813em;
     font-weight:bold;
     background-color:rgb(122, 180, 180); 
     border-right: 2px solid rgb(99, 145, 145); 
@@ -251,7 +251,7 @@ button{
     border-top:2px solid rgb(68, 81, 83);
     border-left:2px solid rgb(68, 81, 83);
     color:white;
-    font-size:22px;
+    font-size:1.375em;
     font-weight: bold;
 }
 .navigation-arrow:hover{
@@ -301,15 +301,15 @@ button{
     border-bottom: 2px solid rgb(207, 209, 209);
 }
 .negative{
-    font-size: 16px;
+    font-size: 1.000em;
     font-weight: bold;
 }
 .enter{
-    font-size: 13px;
+    font-size: 0.813em;
     font-weight: bold;
 }
 .decimal{
-    font-size: 24px;
+    font-size: 1.500em;
 }
 .color-selector{
     display:flex;
