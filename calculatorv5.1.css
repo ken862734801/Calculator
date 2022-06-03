@@ -3,27 +3,35 @@
 }
 
 body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     min-height:100vh;
     background-image: url(https://as1.ftcdn.net/v2/jpg/02/81/02/56/1000_F_281025640_kspbUlK5H6Hs49niGyuizejPfQTVfKKF.jpg);
     background-repeat: none;
     background-size: cover;
 }
-
+.wrapper{
+    margin: 20px auto;
+}
 .outer-border{
+    display:flex;
+    min-height: 70vh;
     height:800px;
     width:410px;
     border: 4px solid rgb(207,207,207);
     background-color: rgb(238, 236, 236);
     border-top: 4px solid rgb(122, 180, 180);
-    display:flex;
     justify-content: center;
     border-top-right-radius: 48px;
     border-top-left-radius: 48px;
     border-bottom-left-radius: 138px;
     border-bottom-right-radius: 138px;
-    margin: 30px auto;
+    margin: 0 auto;
+    
     
 }
+
 .inner-border{
         display:flex;
         height: 775px;
@@ -311,14 +319,12 @@ button{
 .decimal{
     font-size: 1.500em;
 }
-.color-selector{
+ .color-selector{
     display:flex;
     width: 400px;
     height:50px;
-    /* border: 1px solid red; 
-    background-color:white; */
-    margin: 0 auto;
-    margin-bottom: 25px;
+   /* border: 1px solid red; */
+    margin: 15px auto;
     justify-content:center;
     align-items:center;
 }
@@ -343,4 +349,5 @@ button{
 #option-2:hover{
     background-color:rgb(192, 145, 153);
     
-}
+} 
+
