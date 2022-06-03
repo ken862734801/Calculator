@@ -16,7 +16,6 @@ body{
 }
 .outer-border{
     display:flex;
-    min-height: 70vh;
     height:800px;
     width:410px;
     border: 4px solid rgb(207,207,207);
