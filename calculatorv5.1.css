@@ -3,31 +3,30 @@
 }
 
 body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
     min-height:100vh;
+    align-items: center;
+    justify-content: center;
     background-image: url(https://as1.ftcdn.net/v2/jpg/02/81/02/56/1000_F_281025640_kspbUlK5H6Hs49niGyuizejPfQTVfKKF.jpg);
     background-repeat: none;
     background-size: cover;
+}
 
 .outer-border{
-    display:flex;
     height:800px;
     width:410px;
     border: 4px solid rgb(207,207,207);
     background-color: rgb(238, 236, 236);
     border-top: 4px solid rgb(122, 180, 180);
+    display:flex;
     justify-content: center;
     border-top-right-radius: 48px;
     border-top-left-radius: 48px;
     border-bottom-left-radius: 138px;
     border-bottom-right-radius: 138px;
-    margin: 0 auto;
-    
+    margin: 30px auto;
+
     
 }
-
 .inner-border{
         display:flex;
         height: 775px;
@@ -179,7 +178,6 @@ body{
 .row-2{
     display:grid;
     grid-template-columns: auto auto auto auto auto;
-    margin-top:10px;
     width: 330px;
     margin: 5px auto;
     margin-top: 22px;
@@ -315,10 +313,12 @@ button{
 .decimal{
     font-size: 1.500em;
 }
- .color-selector{
+.color-selector{
     display:flex;
-   /* border: 1px solid red; */
-    margin: 15px auto;
+    /* border: 1px solid red; 
+    background-color:white; */
+    margin: 0 auto;
+    margin-bottom: 25px;
     justify-content:center;
     align-items:center;
 }
@@ -340,11 +340,10 @@ button{
     background-color:pink;
     border: 1px solid black;
 }
-    
 #option-2:hover{
-    background-color:rgb(192, 145, 153);  
-} 
+    background-color:rgb(192, 145, 153);
     
+}
 @media screen and (max-width:500px){
     .outer-border{
         height: 720px;
@@ -444,4 +443,3 @@ button{
         height:27px;
     }
 }
-
