@@ -10,10 +10,7 @@ body{
     background-image: url(https://as1.ftcdn.net/v2/jpg/02/81/02/56/1000_F_281025640_kspbUlK5H6Hs49niGyuizejPfQTVfKKF.jpg);
     background-repeat: none;
     background-size: cover;
-}
-.wrapper{
-    margin: 20px auto;
-}
+
 .outer-border{
     display:flex;
     height:800px;
@@ -320,8 +317,6 @@ button{
 }
  .color-selector{
     display:flex;
-    width: 400px;
-    height:50px;
    /* border: 1px solid red; */
     margin: 15px auto;
     justify-content:center;
