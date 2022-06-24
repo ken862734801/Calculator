@@ -1,117 +1,110 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="calculator.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="calculatorv5.1.css" rel="stylesheet">
     </head>
     <body>
-        <div class="outer-container">
-            <div class="outer">
-                <div class="inner">
-                    <div class="container">
+    
+        <div class="outer-border" id="outer">
+            <div class="inner-border" id="inner-color">
+                <div class="calculator">
+                    <div class="product-name">
+                        <h3>TI-30XS</h3>
+                        <p>MultiView</p>
+                    </div>
+                    <div class="solar-panel" id="solar">
+                        <div class="panel-line"></div>
+                        <div class="panel-line"></div>
+                        <div class="panel-line"></div>
+                        <div class="panel-line"></div>
+                        <div class="panel-line"></div>
+                    </div>
+                    <div class="brand-name">TEXAS INSTRUMENTS</div>
+                    <div class="screen-display" id="screen">
+                        <div class="calculator-display"></div>
+                    </div>
 
-                        <div class="header">
-                            <div class="title">
-                                <h3>TI-30XS</h3>
-                                <p>MultiView</p>
+                    <div class="calculator-keys">
+                        <div class="row-1">
+                            <div class="column-1">
+                                <button class="NaN" data-action="random">random</button>
+                                <button class="NaN" data-action="mode">mode</button>
+                                <button class="NaN" data-action="delete">delete</button>
+                                <button class="NaN" data-action="log">log</button>
+                                <button class="NaN" data-action="probability">prb</button>
+                                <button class="NaN" data-action="data">data</button>
                             </div>
-                            <div class="solar-panel">
-                                    <div class="lines start"></div>
-                                    <div class="lines"></div>
-                                    <div class="lines"></div>
-                                    <div class="lines"></div>
-                                    <div class="lines end"></div>
-                            </div>
-                            <div class="subtitle">
-                                <h6>TEXAS INSTRUMENTS</h6>
-                            </div>
-                        </div>
 
-                        <div class="screen">
-                            <div class="container">
-                            <div class="display"></div>
-                            </div>
-                        </div>
-
-                        <div class="navigation">
-                            <div class="row-1">
-                                <div class="container-2">
-                                    <div class="column shift">
-                                        <button class="top">random</button>
-                                        <button class="top">log</button>
-                                    </div>
-                                    <div class="column">
-                                        <button class="top">mode</button>
-                                        <button class="top">prb</button>
-                                    </div>
-                                    <div class="column edit">
-                                        <button class="top">delete</button>
-                                        <button class="top">data</button>
-                                    </div>
-                                    <div class="column design">
-                                        <div class="rectangle">
-                                            <div class="oval"></div>
+                            <div class="column-2">
+                                <div class="design">
+                                    <div class="circle">
+                                        <div class="container">
+                                            <div class="top row">
+                                            <button class="navigation-arrow" id="up" data-action="up"></button>
+                                            </div>
+                                            <div class="middle row">
+                                                <button class="navigation-arrow" id="left" data-action="left"></button>
+                                            <button class="navigation-arrow" id="right" data-action="right"></button>
+                                            </div>
+                                            <div class="bottom row">
+                                            <button class="navigation-arrow" id="down" data-action="down"></button>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="buttons">
-                            <div class="row-2">
-                                <div class="container-3">
-                                    <div class="column-2">
-                                        <button class="other">ln</button>
-                                        <button class="other">π</button>
-                                        <button class="other">^</button>
-                                        <button class="other">x^2</button>
-                                        <button class="other">x</button>
-                                        <button class="other">sto</button>
-                                        <button class="other">on</button>
-                                    </div>
-                                    <div class="column-2">
-                                        <button class="other">n/d</button>
-                                        <button class="other">sin</button>
-                                        <button class="other">x^-1</button>
-                                        <button class="number">7</button>
-                                        <button class="number">4</button>
-                                        <button class="number">1</button>
-                                        <button class="number">0</button>
-                                    </div>
-                                    <div class="column-2">
-                                        <button class="other">x10^n</button>
-                                        <button class="other">cos</button>
-                                        <button class="other">(</button>
-                                        <button class="number">8</button>
-                                        <button class="number">5</button>
-                                        <button class="number">2</button>
-                                        <button class="number">.</button>
-                                    </div>
-                                    <div class="column-2">
-                                        <button class="other">table</button>
-                                        <button class="other">tan</button>
-                                        <button class="other">)</button>
-                                        <button class="number">9</button>
-                                        <button class="number">6</button>
-                                        <button class="number">3</button>
-                                        <button class="number">(-)</button>
-                                    </div>
-                                    <div class="column-2">
-                                        <button class="other">clear</button>
-                                        <button class="other" id="operator">÷</button>
-                                        <button class="other" id="operator">x</button>
-                                        <button class="number" id =operator>-</button>
-                                        <button class="number" id="operator">+</button>
-                                        <button class="number">&#10094 &#10095</button>
-                                        <button class="number" id="enter">enter</button>
-                                    </div>
-                                    
+                        <div class="row-2">
+                            <button class="NaN">ln</button>
+                            <button class="NaN">n/d</button>
+                            <button class="NaN">x10^n</button>
+                            <button class="NaN">table</button>
+                            <button class="NaN" data-action="clear">clear</button>
+                            <button class="NaN" data-action="pi">π</button>
+                            <button class="NaN" data-action="sin">sin</button>
+                            <button class="NaN" data-action="cos">cos</button>
+                            <button class="NaN" data-action="tan">tan</button>
+                            <button class="operator" data-action="division">÷</button>
+                            <button class="NaN">^</button>
+                            <button class="NaN">x^-1</button>
+                            <button class="NaN">(</button>
+                            <button class="NaN">)</button>
+                            <button class="operator" data-action="multiplication">&times;</button>
+                            <button class="NaN">x^2</button>   
+                            <button class="number">7</button>
+                            <button class="number">8</button>
+                            <button class="number">9</button>
+                            <button class="operator" data-action="subtraction">-</button>
+                            <button class="NaN">x</button>
+                            <button class="number">4</button>
+                            <button class="number">5</button>
+                            <button class="number">6</button>
+                            <button class="operator" data-action="addition">+</button>  
+                            <button class="NaN" data-action="off">off</button>
+                            <button class="number">1</button>
+                            <button class="number">2</button>
+                            <button class="number">3</button>
+                                <div class="button-container">
+                                    <button class="accessory" id="forward">&#10094;</button>
+                                    <button class="accessory" id="backward">&#10095;</button>    
                                 </div>
-                            </div>
+                            <button class="NaN" data-action="on">on</button>
+                            <button class="number">0</button>
+                            <button class="decimal accessory" data-action="decimal">.</button>
+                            <button class="negative accessory" data-action="negative">(−)</button>
+                            <button class="enter accessory" data-action="calculate">enter</button>
                         </div>
-
                     </div>
+
                 </div>
             </div>
+        <div class="color-selector">
+            <button class ="colorway" id="option-1" onclick="colorChanger('blue')"></button>
+            <button class="colorway" id="option-2" onclick="colorChanger('pink')"></button>
         </div>
+        <script defer src="calculatorv5.1.js"></script>
+    </div>
     </body>
-    </html>
+</html>

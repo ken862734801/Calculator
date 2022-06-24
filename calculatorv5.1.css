@@ -1,0 +1,447 @@
+*{
+    margin:0;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-image: url(https://as1.ftcdn.net/v2/jpg/02/81/02/56/1000_F_281025640_kspbUlK5H6Hs49niGyuizejPfQTVfKKF.jpg);
+    background-repeat: none;
+    background-size: cover;
+
+.outer-border{
+    display:flex;
+    height:800px;
+    width:410px;
+    border: 4px solid rgb(207,207,207);
+    background-color: rgb(238, 236, 236);
+    border-top: 4px solid rgb(122, 180, 180);
+    justify-content: center;
+    border-top-right-radius: 48px;
+    border-top-left-radius: 48px;
+    border-bottom-left-radius: 138px;
+    border-bottom-right-radius: 138px;
+    margin: 0 auto;
+    
+    
+}
+
+.inner-border{
+        display:flex;
+        height: 775px;
+        width:365px;
+        border: 1px solid rgb(238, 236, 236);
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 118px;
+        border-bottom-right-radius: 118px;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        justify-content: center;
+        background-color:rgb(122, 180, 180);           
+}
+.product-name{
+    text-align:center;
+    margin-top:0.875em;
+    color:rgb(255, 255, 255);
+}
+.product-name p{
+    font-weight: 500;
+    font-size: 1.063em;
+}
+.solar-panel{
+    display:flex;
+    width:115px;
+    height:25px;
+    border: 2px solid rgb(82, 122, 122);
+    background-color: rgba(56, 65, 56, 0.808);
+    border-radius: 4px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: 4px solid rgb(82, 122, 122);
+    margin: 0 auto;
+    margin-top:15px;
+}
+.panel-line{
+    width: 30px;
+    height: 25px;
+    border: 1px dashed rgba(110, 124, 110, 0.849);
+    border-bottom:none;
+    border-top:none;
+}
+.brand-name{
+    text-align:center;
+    margin-top:12px;
+    margin-bottom:10px;
+    font-size: 0.688em;
+    font-weight:bold;
+}
+.screen-display{
+        width:300px;
+        height: 130px;
+        border: 3px solid rgb(82, 122, 122);
+        background-color: rgba(166, 180, 175, 0.884);
+        margin: 0 auto;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top: 4px solid rgb(82, 122, 122);
+        border-bottom: 2px solid rgb(82, 122, 122);
+}
+.calculator-display{
+    /* border:1px solid red; */
+    width:275px;
+    height:30px;
+    text-align:right;
+    font-size:1.875em;
+    margin-top: 90px;
+    margin-left:10px;
+}
+.row-1{
+    display:flex;
+    margin-top:27px;
+}
+.column-1{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    margin-left:35px;
+    margin-right:4px;
+    margin-top:4px;
+    gap:4px;
+}
+
+.column-2{
+    display:block;
+    /* border: 1px solid red; */
+    width:172px;
+    height:90px;
+}
+.design{
+    display: flex;
+    width:155px;
+    height:95px;
+    border: 1px solid rgb(238, 236, 236);
+    background-color:rgb(238, 236, 236);
+    margin-left:14px;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    display:flex;
+    width:102px;
+    height:80px;
+    border-radius: 50%;
+    border: 2px solid rgb(54, 67, 71);  
+    background-color:rgb(54, 67, 71); 
+    justify-content: center;
+}
+.navigation-arrow{
+    width:20px;
+    height:22px; 
+}
+.container{
+    display:block;
+    width:80px;
+    height:70px;
+    /* border:1px solid red; */
+}
+.row{
+    display:flex;
+    justify-content:center;
+}
+#up{
+    margin-top:3px;
+    width:21px;
+}
+
+#left{
+    margin-right: 15px;
+    margin-top:5px;
+    width: 24px;
+    height:20px;
+}
+#right{
+    margin-left: 15px;
+    margin-top: 5px;
+    width:24px;
+    height:20px;
+}
+#down{
+    margin-top:3px;
+    width:21px;
+}
+.row-2{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top:10px;
+    width: 330px;
+    margin: 5px auto;
+    margin-top: 22px;
+    gap:3px;
+}
+#forward,
+#backward{
+    width:30px;
+}
+button:hover{
+    cursor:pointer;
+}
+
+button{
+    width:60px;
+    height:40px;
+    border-radius: 16px;
+}
+.button-container{
+    display:flex;
+    width:60px;
+}
+.operator{
+    background-color:rgb(66, 79, 85);  
+    border-right: 2px solid rgb(47, 56, 58);
+    border-bottom: 2px solid rgb(47, 56, 58);
+    border-top:2px solid rgb(68, 81, 83);
+    border-left:2px solid rgb(68, 81, 83);
+    color:white;
+    font-size:1.375em;
+    font-weight: bold;
+}
+.operator:hover{
+    background-color:rgb(54, 67, 71);  
+    border-top:2px solid rgb(75, 89, 90);
+    border-left:2px solid rgb(75, 88, 88);
+}
+.operator:active{
+    background-color:rgb(45, 56, 58); 
+    border-top: 2px solid rgb(34, 41, 43);
+    border-left: 2px solid rgb(34, 41, 43);
+    border-right: 3px solid rgb(69, 80, 83);
+    border-bottom: 3px solid rgb(69, 81, 85);
+}
+.number{
+    font-size: 1.063em;
+    font-weight: bold;
+}
+.NaN{
+    color:white;
+    font-size:0.813em;
+    font-weight:bold;
+    background-color:rgb(122, 180, 180); 
+    border-right: 2px solid rgb(99, 145, 145); 
+    border-bottom: 2px solid rgb(99, 145, 145); 
+    border-top:2px solid rgb(175, 212, 212);
+    border-left:2px solid rgb(175, 212, 212);
+}
+.NaN:hover{
+    background-color:rgb(109, 168, 168); 
+}
+.NaN:active{
+    background-color:rgb(91, 134, 134); 
+    border-right: 2px solid rgb(150, 201, 201); 
+    border-bottom: 2px solid rgb(150, 194, 194);
+    border-top:2px solid rgb(78, 122, 122);
+    border-left:2px solid rgb(77, 117, 117);
+}
+.navigation-arrow{
+    background-color:rgb(66, 79, 85);  
+    border-right: 2px solid rgb(47, 56, 58);
+    border-bottom: 2px solid rgb(47, 56, 58);
+    border-top:2px solid rgb(68, 81, 83);
+    border-left:2px solid rgb(68, 81, 83);
+    color:white;
+    font-size:1.375em;
+    font-weight: bold;
+}
+.navigation-arrow:hover{
+    background-color:rgb(54, 67, 71);  
+    border-top:2px solid rgb(75, 89, 90);
+    border-left:2px solid rgb(75, 88, 88);
+}
+.navigation-arrow:active{
+    background-color:rgb(45, 56, 58); 
+    border-top: 2px solid rgb(34, 41, 43);
+    border-left: 2px solid rgb(34, 41, 43);
+    border-right: 3px solid rgb(69, 80, 83);
+    border-bottom: 3px solid rgb(69, 81, 85);
+}
+.number{
+    background-color:rgb(227, 231, 231); 
+    border-top: 2px solid rgb(207, 209, 209);
+    border-left: 2px solid rgb(207, 209, 209);
+    border-right: 2px solid rgb(122, 133, 136);
+    border-bottom: 2px solid rgb(122, 133, 136);
+}
+.number:hover{
+    background-color:rgb(220, 221, 221);
+}
+.number:active{
+    background-color:rgb(182, 182, 182); 
+    border-top: 2px solid rgb(122, 133, 136);
+    border-left: 2px solid rgb(122, 133, 136);
+    border-right: 2px solid rgb(207, 209, 209);
+    border-bottom: 2px solid rgb(207, 209, 209);
+}
+.accessory{
+    background-color:rgb(227, 231, 231); 
+    border-top: 2px solid rgb(207, 209, 209);
+    border-left: 2px solid rgb(207, 209, 209);
+    border-right: 2px solid rgb(122, 133, 136);
+    border-bottom: 2px solid rgb(122, 133, 136);
+}
+.accessory:hover{
+    background-color:rgb(220, 221, 221);
+}
+.accessory:active{
+    background-color:rgb(182, 182, 182); 
+    border-top: 2px solid rgb(122, 133, 136);
+    border-left: 2px solid rgb(122, 133, 136);
+    border-right: 2px solid rgb(207, 209, 209);
+    border-bottom: 2px solid rgb(207, 209, 209);
+}
+.negative{
+    font-size: 1.000em;
+    font-weight: bold;
+}
+.enter{
+    font-size: 0.813em;
+    font-weight: bold;
+}
+.decimal{
+    font-size: 1.500em;
+}
+ .color-selector{
+    display:flex;
+   /* border: 1px solid red; */
+    margin: 15px auto;
+    justify-content:center;
+    align-items:center;
+}
+#option-1{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background-color:rgb(122, 180, 180);  
+    margin-right:40px;  
+    border: 1px solid black;
+}
+#option-1:hover{
+    background-color:rgb(107, 156, 156); 
+}
+#option-2{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background-color:pink;
+    border: 1px solid black;
+}
+    
+#option-2:hover{
+    background-color:rgb(192, 145, 153);  
+} 
+    
+@media screen and (max-width:500px){
+    .outer-border{
+        height: 720px;
+        width:360px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .inner-border{
+        height: 698px;
+        width: 329px;
+    }
+}
+@media screen and (max-width:500px){
+    .solar-panel{
+        height: 23px;
+        width: 104px;
+    }
+}
+@media screen and (max-width:500px){
+    .screen-display{
+        height: 117px;
+        width: 270px;
+    }
+}
+@media screen and (max-width:500px){
+    button{
+        height: 36px;
+        width: 54px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .row-1{
+        margin-top:20px;
+        margin-left:1px;
+    }
+}
+@media screen and (max-width:500px){
+    .row-2{
+        width: 297px;
+        margin-left:35px;
+        margin-top: 17px;
+        gap:3px;
+    }
+}
+@media screen and (max-width:500px){
+    .column-1{
+        margin-left:33px;
+        margin-right:3.6px;
+        margin-top:3.6px;
+        gap:3.6px;
+    }
+}
+@media screen and (max-width:500px){
+    .column-2{
+        width: 155px;
+        height:81px;
+    }
+}
+@media screen and (max-width:500px){
+    .circle{
+        width: 92px;
+        height:72px;
+        margin-right:1px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .design{
+        width:139px;
+        height:86px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .navigation-arrow{
+        width:18px;
+        height:20px;
+    }
+}
+@media screen and (max-width:500px){
+    .NaN{
+        font-size: 0.720em;
+        font-weight:bold ;
+    }
+}
+@media screen and (max-width:500px){
+    #option-1{
+        width:27px;
+        height:27px;
+    }
+}
+@media screen and (max-width:500px){
+    #option-2{
+        width:27px;
+        height:27px;
+    }
+}
+
