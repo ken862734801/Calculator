@@ -5,6 +5,8 @@ Currently only contains the user interface. Designed based on the TI-30XS.
 
 Javascipt used to create a color changer. Allows user to pick between two colorways. 
 
+Update: I have learned media queries so the the calculator is now semi-responsive on mobile. 
+
 ![Alt text](https://i.imgur.com/TNTJs9h.png)
 
 [Demo](https://ken862734801.github.io/calculator/)
