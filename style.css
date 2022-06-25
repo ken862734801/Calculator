@@ -347,14 +347,14 @@ button{
 @media screen and (max-width:500px){
     .outer-border{
         height: 720px;
-        width:360px;
+        width:365px;
     }
 }
 
 @media screen and (max-width:500px){
     .inner-border{
         height: 698px;
-        width: 329px;
+        width: 325px;
     }
 }
 @media screen and (max-width:500px){
@@ -406,8 +406,8 @@ button{
 }
 @media screen and (max-width:500px){
     .circle{
-        width: 92px;
-        height:72px;
+        width: 97px;
+        height:77px;
         margin-right:1px;
     }
 }
@@ -415,14 +415,14 @@ button{
 @media screen and (max-width:500px){
     .design{
         width:139px;
-        height:86px;
+        height:88px;
     }
 }
 
 @media screen and (max-width:500px){
     .navigation-arrow{
-        width:18px;
-        height:20px;
+        max-width:17px;
+        max-height:20px;
     }
 }
 @media screen and (max-width:500px){
@@ -441,5 +441,10 @@ button{
     #option-2{
         width:27px;
         height:27px;
+    }
+}
+@media screen and (max-width:500px){
+    .operator{
+        padding-right:5px;
     }
 }
