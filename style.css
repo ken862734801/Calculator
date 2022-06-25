@@ -443,4 +443,12 @@ button{
         height:27px;
     }
 }
+@media screen and (max-width:500px){
+    .calculator-display{
+        width:265px;
+        height:35px;  
+        margin-left:1px;
+        margin-top: 75px;
+    }
+}
 
