@@ -21,6 +21,28 @@ body{
     justify-content: center;
     border-top-right-radius: 48px;
     border-top-left-radius: 48px;
+        height: 775px;
+        width:365px;
+        border: 1px solid rgb(238, 236, 236);
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 118px;
+        border-bottom-right-radius: 118px;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        justify-content: center;
+        background-color:rgb(122, 180, 180);           
+}
+.product-name{
+    text-align:center;
+    margin-top:0.875em;
+    color:rgb(255, 255, 255);
+}
+.product-name p{
+    font-weight: 500;
+    font-size: 1.063em;
+}
     border-bottom-left-radius: 138px;
     border-bottom-right-radius: 138px;
     margin: 30px auto;
@@ -451,4 +473,8 @@ button{
         margin-top: 75px;
     }
 }
-
+@media screen and (max-width:500px){
+    .operator{
+        font-size:1.15em;
+    }
+}
