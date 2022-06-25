@@ -443,8 +443,4 @@ button{
         height:27px;
     }
 }
-@media screen and (max-width:500px){
-    .operator{
-        padding-left:1px;
-    }
-}
+
