@@ -421,8 +421,8 @@ button{
 
 @media screen and (max-width:500px){
     .navigation-arrow{
-        max-width:17px;
-        max-height:20px;
+        max-width:20px;
+        max-height:22px;
     }
 }
 @media screen and (max-width:500px){
