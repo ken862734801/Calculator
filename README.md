@@ -11,7 +11,7 @@ Update #2: The calculator is now functional;however, I have yet to implement err
 
 Right now the calculator does the four basic functions, and is able to parse expressions with parentheses. 
 
-Would not have know where to start without this[https://www.freecodecamp.org/news/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98/] free code camp tutorial! Shout out to them!
+Would not have know where to start without this(https://www.freecodecamp.org/news/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98/) free code camp tutorial! Shout out to them!
 
 ![Alt text](https://i.imgur.com/C5Nvy5D.png)
 
