@@ -23,13 +23,14 @@
                     </div>
                     <div class="brand-name">TEXAS INSTRUMENTS</div>
                     <div class="screen-display" id="screen">
+                        <div class="previous-display"></div>
                         <div class="calculator-display"></div>
                     </div>
 
                     <div class="calculator-keys">
                         <div class="row-1">
                             <div class="column-1">
-                                <button class="NaN" data-action="random">random</button>
+                                <button class="second" id="secondBtn" data-action="2nd">2nd</button>
                                 <button class="NaN" data-action="mode">mode</button>
                                 <button class="NaN" data-action="delete">delete</button>
                                 <button class="NaN" data-action="log">log</button>
@@ -58,10 +59,10 @@
                             </div>
                         </div>
                         <div class="row-2">
-                            <button class="NaN">ln</button>
-                            <button class="NaN">n/d</button>
-                            <button class="NaN">x10^n</button>
-                            <button class="NaN">table</button>
+                            <button class="NaN" data-action="ln">ln</button>
+                            <button class="NaN" data-action="n/d">n/d</button>
+                            <button class="NaN" data-action="x10^n">x10^n</button>
+                            <button class="NaN" data-action="table">table</button>
                             <button class="NaN" data-action="clear">clear</button>
                             <button class="NaN" data-action="pi">π</button>
                             <button class="NaN" data-action="sin">sin</button>
@@ -69,16 +70,16 @@
                             <button class="NaN" data-action="tan">tan</button>
                             <button class="operator" data-action="division">÷</button>
                             <button class="NaN">^</button>
-                            <button class="NaN">x^-1</button>
+                            <button class="NaN" data-action="negative-exponent">x^-1</button>
                             <button class="NaN">(</button>
                             <button class="NaN">)</button>
-                            <button class="operator" data-action="multiplication">&times;</button>
-                            <button class="NaN">x^2</button>   
+                            <button class="operator" data-action="multiplication">×</button>
+                            <button class="NaN" data-action="squared">x^2</button>   
                             <button class="number">7</button>
                             <button class="number">8</button>
                             <button class="number">9</button>
                             <button class="operator" data-action="subtraction">-</button>
-                            <button class="NaN">x</button>
+                            <button class="NaN" data-action="variable">x</button>
                             <button class="number">4</button>
                             <button class="number">5</button>
                             <button class="number">6</button>
@@ -88,14 +89,14 @@
                             <button class="number">2</button>
                             <button class="number">3</button>
                                 <div class="button-container">
-                                    <button class="accessory" id="forward">&#10094;</button>
-                                    <button class="accessory" id="backward">&#10095;</button>    
+                                    <button class="accessory" data-action="forward" id="forward">&#10094;</button>
+                                    <button class="accessory" data-action="backward" id="backward">&#10095;</button>    
                                 </div>
                             <button class="NaN" data-action="on">on</button>
                             <button class="number">0</button>
                             <button class="decimal accessory" data-action="decimal">.</button>
-                            <button class="negative accessory" data-action="negative">(−)</button>
-                            <button class="enter accessory" data-action="calculate">enter</button>
+                            <button class="negative accessory" data-action="negative">(-)</button>
+                            <button class="enter accessory" id="enter" data-action="calculate">enter</button>
                         </div>
                     </div>
 
@@ -110,6 +111,7 @@
 
         </div>
         <script defer src="javascript.js"></script>
+        <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
 
     </body>
 </html>

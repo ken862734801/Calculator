@@ -24,7 +24,7 @@ body{
     border-bottom-left-radius: 138px;
     border-bottom-right-radius: 138px;
     margin: 30px auto;
-
+    box-shadow: 2px 2px 2px rgb(83, 83, 83);
     
 }
 .inner-border{
@@ -79,6 +79,7 @@ body{
     font-weight:bold;
 }
 .screen-display{
+        display:block;
         width:300px;
         height: 130px;
         border: 3px solid rgb(82, 122, 122);
@@ -91,13 +92,22 @@ body{
         border-top: 4px solid rgb(82, 122, 122);
         border-bottom: 2px solid rgb(82, 122, 122);
 }
-.calculator-display{  
-   /* border:1px solid red; */
+.previous-display{
+    margin-left: 10px;
     width:275px;
     height:30px;
+    /* border:1px solid black; */
+    text-align-last: right;
+    margin-top: 5px;
+}
+
+.calculator-display{  
+    /* border:1px solid red; */
+    width:280px;
+    height:36px;
     text-align:right;
-    font-size:1.875em;
-    margin-top: 90px;
+    font-size:1.575em;
+    margin-top: 60px;
     margin-left:10px;
 }
 .row-1{
@@ -274,6 +284,7 @@ button{
     border-left: 2px solid rgb(207, 209, 209);
     border-right: 2px solid rgb(122, 133, 136);
     border-bottom: 2px solid rgb(122, 133, 136);
+    color:rgb(47, 56, 58);
 }
 .number:hover{
     background-color:rgb(220, 221, 221);
@@ -285,13 +296,36 @@ button{
     border-right: 2px solid rgb(207, 209, 209);
     border-bottom: 2px solid rgb(207, 209, 209);
 }
+#secondBtn{
+    color:rgb(54, 67, 71); 
+    background-color: rgb(124, 196, 124);
+    border-top: 2px solid rgb(166, 214, 166);
+    border-left: 2px solid rgb(166, 214, 166);
+    border-right: 2px solid rgb(90, 150, 90);
+    border-bottom: 2px solid  rgb(90, 150, 90);
+    font-size:0.813em;
+    font-weight:bold;
+    
+}
+#secondBtn:hover{
+    background-color: rgb(111, 173, 111);
+}
+#secondBtn:active{
+    background-color: rgb(87, 141, 87);
+    border-top: 2px solid rgb(77, 116, 77);
+    border-left: 2px solid rgb(77, 116, 77);
+    border-right: 2px solid rgb(166, 214, 166);
+    border-bottom: 2px solid  rgb(166, 214, 166);
+}
 .accessory{
     background-color:rgb(227, 231, 231); 
     border-top: 2px solid rgb(207, 209, 209);
     border-left: 2px solid rgb(207, 209, 209);
     border-right: 2px solid rgb(122, 133, 136);
     border-bottom: 2px solid rgb(122, 133, 136);
+    color:rgb(47, 56, 58);
 }
+
 .accessory:hover{
     background-color:rgb(220, 221, 221);
 }
@@ -453,6 +487,11 @@ button{
         width:265px;
         height:35px;  
         margin-left:1px;
-        margin-top: 75px;
+        margin-top: 45px;
+    }
+}
+@media screen and (max-width:500px){
+    .previous-display{
+        width:250px;
     }
 }

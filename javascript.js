@@ -1,7 +1,9 @@
 
-const calculator = document.querySelector('.calculator');
-const keys = calculator.querySelector('.calculator-keys');
+const calculator = document.querySelector(".calculator");
+const keys = calculator.querySelector(".calculator-keys");
 const display = document.querySelector(".calculator-display");
+const previousDisplay = document.querySelector(".previous-display");
+
 
 keys.addEventListener("click", e=>{
     if(e.target.matches("button")){
@@ -12,10 +14,21 @@ keys.addEventListener("click", e=>{
         if(!action){
             console.log("number key!")
             if(displayedNum === "0"){
-                display.textContent = keyContent;
+                display.innerHTML = keyContent;
             } else {
-                display.textContent = displayedNum + keyContent;
+                display.innerHTML = displayedNum + keyContent;
             }
+        }
+        if(displayedNum.length >= 17){
+            console.log("error");
+            display.innerHTML = displayedNum;
+        }
+        if(action === "on"){
+            display.textContent = "0"; 
+        }
+        if(action === "off"){
+            previousDisplay.textContent = "";
+            display.textContent = ""; 
         }
         if(
             action === "addition" ||
@@ -23,21 +36,43 @@ keys.addEventListener("click", e=>{
             action === "multiplication" ||
             action === "division"
         ){
+            display.textContent = displayedNum + keyContent;
             console.log("operator key!")
+        }
+        if(action === "division"){
+            display.textContent = displayedNum + ("/")
+        }
+        if(action === "multiplication"){
+            display.textContent = displayedNum + "*"
         }
         if(action === "decimal"){
             display.textContent = displayedNum + ".";
             console.log("decimal key!")
         }
         if(action === "clear"){
-            display.textContent = "";
+            display.textContent = "0";
+            previousDisplay.textContent = "";
             console.log("clear key!")
         }
-        if(action === "enter"){
+        if(action === "calculate"){
+            let currentExp = displayedNum;
+            let answer = math.evaluate(currentExp);
+            previousDisplay.textContent = currentExp;
+            display.textContent = answer;
+            console.log(answer);
+            console.log(currentExp);
             console.log("equals key!")
+        }
+        if(action === "delete"){
+            display.textContent = displayedNum.substring(0, displayedNum.length-1);
+        }
+        if(action === "negative"){
+            display.textContent = displayedNum + " -";
         }
     }
 })
+
+
 
   function colorChanger(color){
       switch(color){
@@ -92,6 +127,8 @@ keys.addEventListener("click", e=>{
 
                         let button_color_pink = document.getElementsByClassName("NaN");
 
+                        let secondBtn = document.getElementById("secondBtn");
+
                         for(let i = 0; i < button_color_pink.length; i++){
                             button_color_pink[i].style.backgroundColor = "pink";
                             button_color_pink[i].style.borderBottomColor= "rgb(182, 118, 129)";
@@ -99,6 +136,33 @@ keys.addEventListener("click", e=>{
                             button_color_pink[i].style.borderLeftColor= "rgb(255, 221, 227)";
                             button_color_pink[i].style.borderTopColor= "rgb(255, 221, 227)";
                             
+                        
+                            secondBtn.style.backgroundColor = "rgb(124, 196, 124)";
+                            secondBtn.style.borderBottomColor= "rgb(90, 150, 90)";
+                            secondBtn.style.borderRightColor ="rgb(90, 150, 90)";
+                            secondBtn.style.borderLeftColor= "rgb(166, 214, 166)";
+                            secondBtn.style.borderTopColor= "rgb(166, 214, 166)";
+
+                            secondBtn.addEventListener('mouseover', function(event){
+                                event.target.style.backgroundColor = "rgb(111, 173, 111)";
+                            });
+                            secondBtn.addEventListener('mouseout', function(event){
+                                event.target.style.backgroundColor = "rgb(124, 196, 124)";
+                            });
+                            secondBtn.addEventListener('mousedown', function(event){
+                                event.target.style.backgroundColor = "rgb(87, 141, 87)";
+                                event.target.style.borderTopColor = " rgb(77, 116, 77)";
+                                event.target.style.borderLeftColor = " rgb(77, 116, 77)";
+                                event.target.style.borderRightColor = "rgb(166, 214, 166)";
+                                event.target.style.borderBottomColor = "rgb(166, 214, 166)";
+                            });
+                            secondBtn.addEventListener('mouseup', function(event){
+                                event.target.style.backgroundColor = "rgb(111, 173, 111)";
+                                event.target.style.borderTopColor = "rgb(166, 214, 166)";
+                                event.target.style.borderLeftColor = "rgb(166, 214, 166)";
+                                event.target.style.borderRightColor = "rgb(90, 150, 90)";
+                                event.target.style.borderBottomColor = "rgb(90, 150, 90)";
+                            });
 
                         let x = calculator.querySelector('.calculator-keys');
                         let y = x.querySelectorAll(".NaN"); 
@@ -123,7 +187,7 @@ keys.addEventListener("click", e=>{
                                 event.target.style.borderRightColor = "rgb(182, 118, 129)";
                                 event.target.style.borderBottomColor = "rgb(182, 118, 129)";
                             });
-
+                            
                         }) 
 
                         }
