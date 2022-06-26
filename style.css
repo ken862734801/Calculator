@@ -512,7 +512,7 @@ button{
 }
 @media screen and (max-width:500px){
     .footer{
-        font-size: 0.68em;
+        display:none;
     }
 }
 
