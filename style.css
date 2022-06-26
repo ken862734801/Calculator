@@ -380,33 +380,33 @@ button{
 }
 @media screen and (max-width:500px){
     .outer-border{
-        height: 734px;
-        width:372px;
+        height: 749px;
+        width:379px;
     }
 }
 
 @media screen and (max-width:500px){
     .inner-border{
-        height: 712px;
-        width: 332px;
+        height: 726px;
+        width: 339px;
     }
 }
 @media screen and (max-width:500px){
     .solar-panel{
-        height: 23px;
-        width: 104px;
+        height: 24px;
+        width: 106px;
     }
 }
 @media screen and (max-width:500px){
     .screen-display{
-        height: 117px;
-        width: 270px;
+        height: 119px;
+        width: 275px;
     }
 }
 @media screen and (max-width:500px){
     button{
-        height: 38px;
-        width: 56px;
+        height: 39px;
+        width: 57px;
     }
 }
 
@@ -440,16 +440,16 @@ button{
 }
 @media screen and (max-width:500px){
     .circle{
-        width: 97px;
-        height:77px;
+        width: 99px;
+        height:79px;
         margin-right:1px;
     }
 }
 
 @media screen and (max-width:500px){
     .design{
-        width:139px;
-        height:88px;
+        width:141px;
+        height: 90px;
     }
 }
 @media screen and (max-width:500px){
@@ -493,5 +493,11 @@ button{
 @media screen and (max-width:500px){
     .previous-display{
         width:250px;
+    }
+}
+
+@media screen and (max-width:500px){
+    #enter{
+        font-size: 0.78em;
     }
 }
