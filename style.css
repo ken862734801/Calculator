@@ -495,9 +495,3 @@ button{
         width:250px;
     }
 }
-@media screen and (max-width:500px){
-    .negative{
-        font-size:  0.75em;
-        font-weight: bold;
-    }
-}
