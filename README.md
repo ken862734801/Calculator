@@ -7,7 +7,7 @@ Javascipt used to create a color changer. Allows user to pick between two colorw
 
 Update: I have learned media queries so the the calculator is now semi-responsive on mobile. 
 
-Update #2: The calculator is now functional;however, I have yet to implement error messages and fixed bugs. The assignment called for a four function calculator but after making the UI I decided to use the math.js library and make the calculator scientific. There are still many functions missing that I will hopefully add in the future. Also made some minor UI changes. 
+Update #2: The calculator is now functional;however, I have yet to implement error messages and fixed bugs. The assignment called for a four function calculator but after making the UI I decided to use the [math.js](https://mathjs.org/index.html) library and make the calculator scientific. There are still many functions missing that I will hopefully add in the future. Also made some minor UI changes. 
 
 Right now the calculator does the four basic functions, and is able to parse expressions with parentheses. 
 
@@ -17,4 +17,4 @@ Right now the calculator does the four basic functions, and is able to parse exp
 
 [Link to the Assignment](https://www.theodinproject.com/lessons/foundations-calculator)
 
-[Link to math.js website](https://mathjs.org/index.html);
+
