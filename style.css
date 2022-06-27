@@ -3,7 +3,7 @@
 }
 
 body{
-    min-height:100%;
+    min-height:100vh;
     align-items: center;
     justify-content: center;
     background-image: url(https://as1.ftcdn.net/v2/jpg/02/81/02/56/1000_F_281025640_kspbUlK5H6Hs49niGyuizejPfQTVfKKF.jpg);
@@ -379,7 +379,6 @@ button{
     
 }
 .footer{
-    position:absolute;
     text-align:center;
     font-size:0.78em;
     padding:8px;
