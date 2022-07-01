@@ -69,6 +69,46 @@ keys.addEventListener("click", e=>{
         if(action === "negative"){
             display.textContent = displayedNum + " -";
         }
+        if(action === "squared"){
+            display.textContent = displayedNum+ "^2";
+        }
+        if(action === "negative-exponent"){
+            display.textContent = displayedNum+ "^-1"
+        }
+        if(action === "sin"){
+            if(display.textContent === "0"){
+                display.textContent = "sin("
+            } else {
+            display.textContent = displayedNum + "sin(";
+            }
+        }
+        if(action === "tan"){
+            if(display.textContent === "0"){
+                display.textContent = "tan("
+            } else {
+            display.textContent = displayedNum + "tan(";
+            }
+        }
+        if(action === "cos"){
+            if(display.textContent === "0"){
+                display.textContent = "cos("
+            } else {
+            display.textContent = displayedNum + "cos(";
+            }
+        }
+        if(action === "exponent"){
+            display.textContent = displayedNum + "*10^";
+        }
+        if(action === "log"){
+            display.textContent = displayedNum + "log(";
+        }
+        if(action === "pi"){
+            if(display.textContent === "0"){
+                display.textContent = "3.14"
+            } else {
+            display.textContent = displayedNum +"(3.14)";
+            }
+        }
     }
 })
 
