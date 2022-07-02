@@ -17,10 +17,9 @@ The calculator is functioning for the most part; however, I have yet to include 
 I used javascript to allow users to choose between two colorways.
 
 ## Resources
-I designed the UI prior to realizing the actual scope and knowledge required to created a scientific calculator as compared to a four function calculator.
+I designed the UI prior to realizing the actual scope and knowledge required to create a scientific calculator as compared to a four function calculator.
 
-I used math.js, an extensive javascript and node.js library, to parse expressions and run a large number of complex functions commonly found on a standard
-scientific calculator. 
+So I decided to use math.js, an extensive javascript and node.js library, to parse expressions and run a large number of complex functions commonly found on a standard scientific calculator. 
 
 
 Some of the buttons present on the actual Texas Instrument 30XS Multiview don't have a math.js equivalent, and are present more so for the sake of preserving the design. 
