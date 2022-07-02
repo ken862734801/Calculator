@@ -1,20 +1,26 @@
 # Calculator
 
-Creating a calculator for the Odin project using HTML, CSS, and Javascript. 
-Currently only contains the user interface. Designed based on the TI-30XS.
+##Demo (Work in Progress)
+(https://ken862734801.github.io/calculator/)
 
-Javascipt used to create a color changer. Allows user to pick between two colorways. 
-
-Update: I have learned media queries so the the calculator is now semi-responsive on mobile. 
-
-Update #2: The calculator is now functional;however, I have yet to implement error messages and fixed bugs. The assignment called for a four function calculator but after making the UI I decided to use the [math.js](https://mathjs.org/index.html) library and make the calculator scientific. There are still many functions missing that I will hopefully add in the future. Also made some minor UI changes. 
-
-Right now the calculator does the four basic functions, and is able to parse expressions with parentheses. 
-
+##Preview
 ![Alt text](https://i.imgur.com/C5Nvy5D.png)
 
-[Demo](https://ken862734801.github.io/calculator/)
-
+##Summary
+The goal of this Odin Project assignment was to create a functioning calculator using HTML, CSS, and Javascript.
 [Link to the Assignment](https://www.theodinproject.com/lessons/foundations-calculator)
+
+The calculator is functioning for the most part; however, I have yet to include error messages, or implemented regex to prevent the use of multiple decimals or a missing parentheses. 
+
+##Resources
+I designed the UI prior to realizing the actual scope and knowledge required to created a scientific calculator as compared to a four function calculator.
+
+I used math.js, an extensive javascript and node.js library, to parse expressions and run a large number of complex functions commonly found on a standard
+scientific calculator. 
+https://mathjs.org/docs/getting_started.html
+
+The design was based off a Texas Instrument 30XS Multiview Calculator.
+
+
 
 
