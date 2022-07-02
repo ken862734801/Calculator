@@ -1,4 +1,4 @@
-# calculator
+# Calculator
 
 Creating a calculator for the Odin project using HTML, CSS, and Javascript. 
 Currently only contains the user interface. Designed based on the TI-30XS.
