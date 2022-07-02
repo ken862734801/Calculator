@@ -2,7 +2,7 @@
 
 ## Demo (Work in Progress)
 
-(https://ken862734801.github.io/Calculator/)
+https://ken862734801.github.io/Calculator/
 
 ## Preview
 ![Alt text](https://i.imgur.com/C5Nvy5D.png)
