@@ -23,7 +23,7 @@ I used math.js, an extensive javascript and node.js library, to parse expression
 scientific calculator. 
 
 
-Some of the buttons present on the actual Texas Instrument 30XS Multiview don't have a math.js equivalent, and are present more so for the sake of perserving the design. 
+Some of the buttons present on the actual Texas Instrument 30XS Multiview don't have a math.js equivalent, and are present more so for the sake of preserving the design. 
 
 https://mathjs.org/docs/getting_started.html
 
