@@ -67,7 +67,11 @@ keys.addEventListener("click", e=>{
             display.textContent = displayedNum.substring(0, displayedNum.length-1);
         }
         if(action === "negative"){
+            if(display.textContent === "0"){
+                display.textContent = "-";
+            }else{
             display.textContent = displayedNum + " -";
+            }
         }
         if(action === "squared"){
             display.textContent = displayedNum+ "^2";
@@ -100,7 +104,11 @@ keys.addEventListener("click", e=>{
             display.textContent = displayedNum + "*10^";
         }
         if(action === "log"){
+            if(display.textContent === "0"){
+                display.textContent = "log(";
+            }else{
             display.textContent = displayedNum + "log(";
+            }
         }
         if(action === "pi"){
             if(display.textContent === "0"){
