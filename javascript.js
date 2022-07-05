@@ -19,7 +19,7 @@ keys.addEventListener("click", e=>{
                 display.innerHTML = displayedNum + keyContent;
             }
         }
-        if(displayedNum.length >= 17){
+        if(displayedNum.length >= 20){
             console.log("error");
             display.innerHTML = displayedNum;
         }
