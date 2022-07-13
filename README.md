@@ -12,7 +12,7 @@ The design was based off a Texas Instrument 30XS Multiview Calculator.
 The goal of this Odin Project assignment was to create a functioning calculator using HTML, CSS, and Javascript.
 [Link to the Assignment](https://www.theodinproject.com/lessons/foundations-calculator)
 
-The calculator is functioning for the most part; however, I have yet to include error messages, implemented regex to prevent the use of multiple decimals, missing parentheses, or a maximum character display limit. 
+The calculator is functioning for the most part; however, I have yet to include error messages.
 
 I used javascript to allow users to choose between two colorways.
 
