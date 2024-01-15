@@ -6,6 +6,8 @@ interface ButtonProps {
 }
 
 const Button = ({ data, isAlt }: ButtonProps) => {
+    const val = isAlt && data.value.length == 2 ? data.value[1] : data.value[0];
+    
     let styles;
     if (data.type === 'function') {
         styles = 'function';
@@ -26,17 +28,9 @@ const Button = ({ data, isAlt }: ButtonProps) => {
             )}
             <button
                 className={`flex items-center justify-center button ${styles}`}
-                value={
-                    isAlt && data.value.length == 2
-                        ? data.value[1]
-                        : data.value[0]
-                }
+                value={val}
             >
-                <div>
-                    {isAlt && data.value.length == 2
-                        ? data.value[1]
-                        : data.value[0]}
-                </div>
+                <div>{val}</div>
             </button>
         </div>
     );
