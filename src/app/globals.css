@@ -3,25 +3,74 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --white: rgb(255, 255, 255);
+    --blue: rgb(122, 180, 180);
+    --blue-hover: rgb(109, 168, 168);
+    --border-blue-light: rgb(175, 212, 212); 
+    --border-blue-dark: rgb(99, 145, 145); 
+    --blue-active: rgb(91, 134, 134); 
+    --blue-active-dark: rgb(77, 117, 117);
+    --blue-active-light: rgb(150, 201, 201);
+    --green:rgb(124, 196, 124);
+    --green-hover:rgb(111, 173, 111);
+    --border-green-light: rgb(166, 214, 166);
+    --border-green-dark: rgb(90, 150, 90);
+    --green-active: rgb(87, 141, 87);
+}
+* {
+    margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    height: 100%;
+}
+label{
+    position:absolute;
+    top: -20px;
+    left:0;
+    text-align: center;
+    font-weight: bold;
+    font-size:0.925rem;
+}
+button{
+    width: 57.5px;
+    height: 37.5px;
+    border-radius: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.815rem;
+    font-weight: bold;
+}
+.button:active{
+    transform: scale(0.95);
+}
+.function{
+    background-color: var(--blue);
+    border-width: 2px;
+    border-top-color:var(--border-blue-light);
+    border-bottom-color: var(--border-blue-dark);
+    border-right-color:var(--border-blue-dark);
+    border-left-color:var(--border-blue-light);
+    color:var(--white);
+}
+.function:hover{
+    background-color: var(--blue-hover);
+}
+.function:active{
+    background-color: var(--blue-active);
+}
+.special{
+    background-color: var(--green);
+    border-width:2px;
+    border-top-color:var(--border-green-light);
+    border-bottom-color:var(--border-green-dark);
+    border-right-color:var(--border-green-dark);
+    border-left-color:var(--border-blue-light);
+    color:rgb(54, 67, 71); 
+}
+.special:hover{
+    background-color: var(--green-hover);
+}
+.special:active{
+    background-color: var(--green-active);
 }
