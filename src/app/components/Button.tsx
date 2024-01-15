@@ -2,38 +2,40 @@ import React from 'react';
 
 interface ButtonProps {
     isAlt: boolean;
-    value: string[];
-    type: string;
+    data: any;
 }
 
-const Button = (props: ButtonProps) => {
+const Button = ({ data, isAlt }: ButtonProps) => {
     let styles;
-    if(props.type === 'function'){
-        styles = 'function'
-    } else if (props.type === 'special'){
-        styles = 'special'
-    } else if (props.type === 'number'){
-        styles = 'number'
-    };
+    if (data.type === 'function') {
+        styles = 'function';
+    } else if (data.type === 'special') {
+        styles = 'special';
+    } else if (data.type === 'number') {
+        styles = 'number';
+    } else if (data.type === 'operator') {
+        styles = 'operator';
+    }
 
     return (
         <div className='relative w-[55px] mt-4'>
-            {props.value.length == 2 && (
+            {data.value.length == 2 && (
                 <label className='w-full text-[var(--green)]'>
-                    <small>{props.isAlt ? props.value[0] : props.value[1]}</small>
+                    <small>{isAlt ? data.value[0] : data.value[1]}</small>
                 </label>
             )}
-            <button className={`button ${styles}`}
+            <button
+                className={`flex items-center justify-center button ${styles}`}
                 value={
-                    props.isAlt && props.value.length == 2
-                        ? props.value[1]
-                        : props.value[0]
+                    isAlt && data.value.length == 2
+                        ? data.value[1]
+                        : data.value[0]
                 }
             >
                 <div>
-                    {props.isAlt && props.value.length == 2
-                        ? props.value[1]
-                        : props.value[0]}
+                    {isAlt && data.value.length == 2
+                        ? data.value[1]
+                        : data.value[0]}
                 </div>
             </button>
         </div>

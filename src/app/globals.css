@@ -4,6 +4,7 @@
 
 :root {
     --white: rgb(255, 255, 255);
+    --black:rgb(54, 67, 71); 
     --blue: rgb(122, 180, 180);
     --blue-hover: rgb(109, 168, 168);
     --border-blue-light: rgb(175, 212, 212); 
@@ -16,6 +17,11 @@
     --border-green-light: rgb(166, 214, 166);
     --border-green-dark: rgb(90, 150, 90);
     --green-active: rgb(87, 141, 87);
+    --gray:rgb(227, 231, 231); 
+    --border-gray-light: rgb(207, 209, 209);
+    --border-gray-dark: rgb(122, 133, 136);
+    --gray-hover:rgb(220, 221, 221);
+    --gray-active:rgb(182, 182, 182);
 }
 * {
     margin: 0;
@@ -44,6 +50,22 @@ button{
 .button:active{
     transform: scale(0.95);
 }
+.number{
+    background-color: var(--gray);
+    border-width:2px;
+    border-top-color:var(--border-gray-light);
+    border-bottom-color:var(--border-gray-dark);
+    border-right-color:var(--border-gray-dark);
+    border-left-color:var(--border-gray-light);
+    color:var(--black); 
+    font-size: 0.925rem;
+}
+.number:hover{
+    background-color: var(--gray-hover);
+}
+.number:active{
+    background-color: var(--gray-active);
+}
 .function{
     background-color: var(--blue);
     border-width: 2px;
@@ -66,7 +88,7 @@ button{
     border-bottom-color:var(--border-green-dark);
     border-right-color:var(--border-green-dark);
     border-left-color:var(--border-blue-light);
-    color:rgb(54, 67, 71); 
+    color:var(--black); 
 }
 .special:hover{
     background-color: var(--green-hover);
