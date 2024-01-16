@@ -26,6 +26,10 @@
     --black-hover: rgb(54, 67, 71);
     --border-black-light: rgb(98, 120, 122);
     --border-black-dark: rgb(47, 56, 58);
+    --pink-hover:rgb(235, 175, 185);
+    --border-pink-light: rgb(255, 221, 227);
+    --border-pink-dark: rgb(182, 118, 129);
+    --pink-active:rgb(192, 145, 154);
 }
 * {
     margin: 0;
@@ -83,7 +87,7 @@ button{
 .operator:hover{
     background-color: var(--black-hover);
 }
-.function{
+.function.blue{
     background-color: var(--blue);
     border-width: 2px;
     border-top-color:var(--border-blue-light);
@@ -92,11 +96,25 @@ button{
     border-left-color:var(--border-blue-light);
     color:var(--white);
 }
-.function:hover{
+.function.blue:hover{
     background-color: var(--blue-hover);
 }
-.function:active{
+.function.blue:active{
     background-color: var(--blue-active);
+}
+.function.pink{
+    background-color: pink;
+    border-width:2px;
+    border-top-color:var(--border-pink-light);
+    border-bottom-color:var(--border-pink-dark);
+    border-right-color:var(--border-pink-dark);
+    border-left-color:var(--border-pink-light);
+}
+.function.pink:hover{
+    background-color: var(--pink-hover);
+}
+.function.pink:active{
+    background-color: var(--pink-active);
 }
 .special{
     background-color: var(--green);

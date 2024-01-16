@@ -1,16 +1,17 @@
 import React from 'react';
 
 interface ButtonProps {
-    isAlt: boolean;
     data: any;
+    isAlt: boolean;
+    theme: string;
 }
 
-const Button = ({ data, isAlt }: ButtonProps) => {
+const Button = ({ data, isAlt, theme }: ButtonProps) => {
     const val = isAlt && data.value.length == 2 ? data.value[1] : data.value[0];
-    
+
     let styles;
     if (data.type === 'function') {
-        styles = 'function';
+        styles = `function ${theme}`;
     } else if (data.type === 'special') {
         styles = 'special';
     } else if (data.type === 'number') {
