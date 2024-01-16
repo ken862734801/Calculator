@@ -109,6 +109,7 @@ button{
     border-bottom-color:var(--border-pink-dark);
     border-right-color:var(--border-pink-dark);
     border-left-color:var(--border-pink-light);
+    color:var(--black-font);
 }
 .function.pink:hover{
     background-color: var(--pink-hover);
