@@ -4,7 +4,7 @@
 
 :root {
     --white: rgb(255, 255, 255);
-    --black:rgb(54, 67, 71); 
+    --black-font:rgb(54, 67, 71); 
     --blue: rgb(122, 180, 180);
     --blue-hover: rgb(109, 168, 168);
     --border-blue-light: rgb(175, 212, 212); 
@@ -22,6 +22,10 @@
     --border-gray-dark: rgb(122, 133, 136);
     --gray-hover:rgb(220, 221, 221);
     --gray-active:rgb(182, 182, 182);
+    --black: rgb(66, 79, 85);
+    --black-hover: rgb(54, 67, 71);
+    --border-black-light: rgb(98, 120, 122);
+    --border-black-dark: rgb(47, 56, 58);
 }
 * {
     margin: 0;
@@ -57,7 +61,7 @@ button{
     border-bottom-color:var(--border-gray-dark);
     border-right-color:var(--border-gray-dark);
     border-left-color:var(--border-gray-light);
-    color:var(--black); 
+    color:var(--black-font); 
     font-size: 0.925rem;
 }
 .number:hover{
@@ -65,6 +69,19 @@ button{
 }
 .number:active{
     background-color: var(--gray-active);
+}
+.operator{
+    background-color: var(--black);
+    border-width: 2px;
+    border-top-color:var(--border-black-light);
+    border-bottom-color:var(--border-black-dark);
+    border-right-color:var(--border-black-dark);
+    border-left-color:var(--border-black-light);
+    color:white;
+    font-size:1rem;
+}
+.operator:hover{
+    background-color: var(--black-hover);
 }
 .function{
     background-color: var(--blue);
@@ -88,7 +105,7 @@ button{
     border-bottom-color:var(--border-green-dark);
     border-right-color:var(--border-green-dark);
     border-left-color:var(--border-blue-light);
-    color:var(--black); 
+    color:var(--black-font); 
 }
 .special:hover{
     background-color: var(--green-hover);
