@@ -17,7 +17,7 @@ const list = [
         value: ['5'],
     },
     {
-        type: 'special',
+        type: 'alt',
         value: ['2nd'],
     },
     {
@@ -29,28 +29,51 @@ const list = [
         value: ['prb', 'angle'],
     },
     {
-        type: 'special',
-        value: ['2nd'],
+        type: 'operator',
+        value: ['-'],
     },
     {
-        type: 'operator',
-        value: ['-']
+        type: 'function',
+        value: ['clear']
     }
 ];
 
 interface CalculatorProps {
-    theme: string
+    theme: string;
 }
 
-function Calculator({theme}: CalculatorProps) {
+function Calculator({ theme }: CalculatorProps) {
     const [isAlt, setIsAlt] = useState(false);
+
+    let record: string[] = [];
+
+    function handleButtonClick(e: any) {
+        const button = e.target;
+        if (button.dataset.type === 'number' || button.dataset.type === 'operator') {
+            record.push(button.value);
+            console.log(record);
+        } else if (button.dataset.type === 'function'){
+            if(button.value === 'clear'){
+                record = ['0'];
+                console.log(record);
+            }
+        } else if (button.dataset.type === 'alt'){
+            setIsAlt(!isAlt);
+        }
+    };
 
     return (
         <div>
             <h5>TI-30XS</h5>
             <h6>MultiView</h6>
             {list.map((item) => (
-                <Button data={item} isAlt={isAlt} theme={theme} />
+                <Button
+                    key={`${item.value}-key`}
+                    handleClick={(e) => handleButtonClick(e)}
+                    data={item}
+                    isAlt={isAlt}
+                    theme={theme}
+                />
             ))}
         </div>
     );

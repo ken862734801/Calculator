@@ -4,16 +4,17 @@ interface ButtonProps {
     data: any;
     isAlt: boolean;
     theme: string;
+    handleClick:(e:any) => (void);
 }
 
-const Button = ({ data, isAlt, theme }: ButtonProps) => {
+const Button = ({ data, isAlt, handleClick, theme }: ButtonProps) => {
     const val = isAlt && data.value.length == 2 ? data.value[1] : data.value[0];
 
     let styles;
     if (data.type === 'function') {
         styles = `function ${theme}`;
-    } else if (data.type === 'special') {
-        styles = 'special';
+    } else if (data.type === 'alt') {
+        styles = 'alt';
     } else if (data.type === 'number') {
         styles = 'number';
     } else if (data.type === 'operator') {
@@ -27,11 +28,13 @@ const Button = ({ data, isAlt, theme }: ButtonProps) => {
                     <small>{isAlt ? data.value[0] : data.value[1]}</small>
                 </label>
             )}
-            <button
+            <button 
+                data-type={data.type}
                 className={`flex items-center justify-center button ${styles}`}
+                onClick={handleClick}
                 value={val}
             >
-                <div>{val}</div>
+                {val}
             </button>
         </div>
     );
