@@ -67,29 +67,27 @@ function Calculator({ theme }: CalculatorProps) {
     function handleButtonClick(e: any) {
         const button = e.target;
 
-        if (button.dataset.type === 'alt') {
+        if (button.value === 'on') {
+            turnOnCalculator();
+        } else if (button.value === 'off') {
+            turnOffCalculator();
+        } else if (button.value === '2nd') {
             setIsAlt(!isAlt);
         }
 
-        if (!isOn) {
-            if (button.value === 'on') {
-                turnOnCalculator();
+        if (isOn) {
+            if (
+                button.dataset.type === 'number' ||
+                button.dataset.type === 'operator'
+            ) {
+                curr.push(button.value);
+                console.log(curr);
+            } else if (button.dataset.type === 'function') {
+                if (button.value === 'clear') {
+                    clear();
+                }
             }
             return;
-        }
-
-        if (
-            button.dataset.type === 'number' ||
-            button.dataset.type === 'operator'
-        ) {
-            curr.push(button.value);
-            console.log(curr);
-        } else if (button.dataset.type === 'function') {
-            if (button.value === 'on') {
-                turnOnCalculator();
-            } else if (button.value === 'off') {
-                turnOffCalculator();
-            }
         }
     }
 
