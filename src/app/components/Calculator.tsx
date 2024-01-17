@@ -43,29 +43,53 @@ interface CalculatorProps {
 }
 
 function Calculator({ theme }: CalculatorProps) {
-    const [isOn, setIsOn] = useState(false);
+    const [isOn, setIsOn] = useState(true);
     const [isAlt, setIsAlt] = useState(false);
 
-    let record: string[] = [];
+    let curr: string[] = [];
+
+    function clear() {
+        curr = ['0'];
+        console.log(curr);
+    }
+
+    function turnOnCalculator() {
+        console.log('Turning on...');
+        clear();
+        setIsOn(true);
+    }
+
+    function turnOffCalculator() {
+        console.log('Turning off...');
+        setIsOn(false);
+    }
 
     function handleButtonClick(e: any) {
         const button = e.target;
+
+        if (button.dataset.type === 'alt') {
+            setIsAlt(!isAlt);
+        }
+
+        if (!isOn) {
+            if (button.value === 'on') {
+                turnOnCalculator();
+            }
+            return;
+        }
+
         if (
             button.dataset.type === 'number' ||
             button.dataset.type === 'operator'
         ) {
-            record.push(button.value);
-            console.log(record);
+            curr.push(button.value);
+            console.log(curr);
         } else if (button.dataset.type === 'function') {
             if (button.value === 'on') {
-                setIsOn(true);
-            } else if (button.value === 'off'){
-                setIsOn(false);
-            } else if (button.value === 'clear'){
-                record = ['0'];
+                turnOnCalculator();
+            } else if (button.value === 'off') {
+                turnOffCalculator();
             }
-        } else if (button.dataset.type === 'alt') {
-            setIsAlt(!isAlt);
         }
     }
 
