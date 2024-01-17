@@ -117,7 +117,7 @@ button{
 .function.pink:active{
     background-color: var(--pink-active);
 }
-.special{
+.alt{
     background-color: var(--green);
     border-width:2px;
     border-top-color:var(--border-green-light);
@@ -126,9 +126,9 @@ button{
     border-left-color:var(--border-blue-light);
     color:var(--black-font); 
 }
-.special:hover{
+.alt:hover{
     background-color: var(--green-hover);
 }
-.special:active{
+.alt:active{
     background-color: var(--green-active);
 }
