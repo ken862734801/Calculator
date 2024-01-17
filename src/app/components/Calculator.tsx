@@ -34,8 +34,8 @@ const list = [
     },
     {
         type: 'function',
-        value: ['clear']
-    }
+        value: ['clear'],
+    },
 ];
 
 interface CalculatorProps {
@@ -43,24 +43,31 @@ interface CalculatorProps {
 }
 
 function Calculator({ theme }: CalculatorProps) {
+    const [isOn, setIsOn] = useState(false);
     const [isAlt, setIsAlt] = useState(false);
 
     let record: string[] = [];
 
     function handleButtonClick(e: any) {
         const button = e.target;
-        if (button.dataset.type === 'number' || button.dataset.type === 'operator') {
+        if (
+            button.dataset.type === 'number' ||
+            button.dataset.type === 'operator'
+        ) {
             record.push(button.value);
             console.log(record);
-        } else if (button.dataset.type === 'function'){
-            if(button.value === 'clear'){
+        } else if (button.dataset.type === 'function') {
+            if (button.value === 'on') {
+                setIsOn(true);
+            } else if (button.value === 'off'){
+                setIsOn(false);
+            } else if (button.value === 'clear'){
                 record = ['0'];
-                console.log(record);
             }
-        } else if (button.dataset.type === 'alt'){
+        } else if (button.dataset.type === 'alt') {
             setIsAlt(!isAlt);
         }
-    };
+    }
 
     return (
         <div>
