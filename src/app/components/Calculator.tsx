@@ -93,7 +93,7 @@ function Calculator({ theme }: CalculatorProps) {
                 button.dataset.type === 'operator'
             ) {
                 setInputValue((prev) => {
-                    if (prev[0] === '0') {
+                    if (prev[0] == '0') {
                         return [button.value];
                     } else {
                         return [...prev, button.value];
